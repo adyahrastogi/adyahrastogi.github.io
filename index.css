@@ -1,5 +1,53 @@
+@font-face {
+  font-family: "Zalando Sans SemiExpanded";
+  src: url("fonts/ZalandoSansSemiExpanded-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Zalando Sans SemiExpanded";
+  src: url("fonts/ZalandoSansSemiExpanded-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Zalando Sans SemiExpanded";
+  src: url("fonts/ZalandoSansSemiExpanded-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Zalando Sans SemiExpanded";
+  src: url("fonts/ZalandoSansSemiExpanded-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Zalando Sans SemiExpanded";
+  src: url("fonts/ZalandoSansSemiExpanded-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  src: url("fonts/SourceCodePro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
-	font-family: Raleway, sans-serif;
+	font-family: "Zalando Sans SemiExpanded", sans-serif;
+	font-weight: 500;
 }
 
 .container {
@@ -15,6 +63,14 @@ body {
 	width: 600px;
 }
 
+.whoami-title {
+	font-family: "Source Code Pro", monospace;
+	font-weight: 400;
+	font-size: 14px;
+	color: #A0A0A0;
+	margin-bottom: 10px;
+}
+
 .name {
 	color: #4C4C4C;
 	margin-bottom: 20px;
@@ -23,15 +79,15 @@ body {
 	font-size: 62px
 }
 
-.name-ipa {
+.name-pronounce {
 	margin-left: 15px;
-
 	font-weight: bold;
 	font-style: italic;
 	font-size: 14px;
 }
 
 .description {
+	font-weight: 300;
 	display: inline-block;
 	line-height: 2;
 	margin-bottom: 20px;
