@@ -47,9 +47,10 @@
 }
 
 h1 {
-    font-size: 1rem; /* Matches the default body font size */
-    font-family: inherit; /* Inherits the font family from the body */
-    font-weight: normal; /* Optional: Makes the font weight normal */
+    font-size: 1rem; 
+    font-family: inherit;
+    font-weight: normal; 
+    margin-bottom: 50px;
 }
 
 body {
