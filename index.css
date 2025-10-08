@@ -12,7 +12,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Zalando Sans SemiExpanded";
   src: url("fonts/ZalandoSansSemiExpanded-Medium.ttf") format("truetype");
@@ -20,7 +19,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Zalando Sans SemiExpanded";
   src: url("fonts/ZalandoSansSemiExpanded-Regular.ttf") format("truetype");
@@ -28,7 +26,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Zalando Sans SemiExpanded";
   src: url("fonts/ZalandoSansSemiExpanded-SemiBold.ttf") format("truetype");
@@ -36,7 +33,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Source Code Pro";
   src: url("fonts/SourceCodePro-Regular.ttf") format("truetype");
@@ -45,184 +41,191 @@
   font-display: swap;
 }
 
+:root {
+    --green-accent: #2E8B57;
+    --green-light: #E6F4EA;
+}
+
 body {
-	font-family: "Zalando Sans SemiExpanded", sans-serif;
-	font-weight: 500;
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+    font-weight: 500;
 }
 
 .container {
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0px 20px 0px 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px 0px 20px;
 }
 
-/* Index CSS */
 .content {
-	width: 600px;
+    width: 600px;
 }
 
 .whoami-title {
-	font-family: "Source Code Pro", monospace;
-	font-weight: 400;
-	font-size: 14px;
-	color: #A0A0A0;
-	margin-bottom: 10px;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 400;
+    font-size: 20px;
+    color: #A0A0A0;
+    margin-bottom: 10px;
 }
 
 .name {
-	color: #4C4C4C;
-	margin-bottom: 20px;
+    color: #4C4C4C;
+    margin-bottom: 20px;
 }
 .name-tag {
-	font-size: 62px
+    font-size: 62px
 }
-
 .name-pronounce {
-	margin-left: 15px;
-	font-weight: bold;
-	font-style: italic;
-	font-size: 14px;
+    margin-left: 15px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 14px;
 }
 
 .description {
-	font-weight: 300;
-	display: inline-block;
-	line-height: 2;
-	margin-bottom: 20px;
+    font-weight: 300;
+    display: inline-block;
+    line-height: 2;
+    margin-bottom: 20px;
 }
 
-.nia-link {
-	color: #DF471C;
-	text-decoration: none;
-	font-weight: 600;
+/* Expert topics styling */
+.expert-topics {
+    margin-top: 20px;
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+    font-weight: 300;
+    color: black;
 }
 
-.ucb {
-	color: #003262;
-	font-weight: 600;
+.expert-topics-heading {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--green-accent);
+    letter-spacing: 1px;
 }
 
-.go-bears {
-	color: #FDB515;
+/* Unordered list styling */
+.expert-topics ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
-.more-links {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+.expert-topics li {
+    margin-bottom: 6px;
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: inherit;
+    color: inherit;
 }
 
-.link {
-	font-size: 13px;
+/* Weightlifting link style */
+.weightlifting-link {
+    color: black;
+    background: var(--green-light);
+    border-radius: 4px;
+    padding: 2px 8px;
+    text-decoration: none;
+    font-weight: 300;
+}
+.weightlifting-link:hover {
+    background: #b2eac7;
+    color: #145c36;
+    text-decoration: underline;
 }
 
-.link > a {
-	color: #2A5DB0;
-	text-decoration: none;
-	font-weight: 600;
+/* Weightlifting page styles */
+.weightlifting-page .container {
+    height: auto;
+    display: block;
+    margin: 40px auto 0 auto;
+    max-width: 700px;
 }
 
-/* End Index */
-.projects {
-	align-items: flex-start;
-	margin-top:  100px;
+.weightlifting-content {
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+    font-weight: 300;
+    color: var(--green-accent);
+    margin-top: 40px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Projects CSS */
-.content-projects {
-	width: 1000px;
+.weightlifting-content p {
+    color: #222;
+}
+
+.weightlifting-heading {
+    color: var(--green-accent);
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+}
+
+.weightlifting-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+	margin-bottom: 30px;
+    font-size: 15px;
+    background: var(--green-light);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.weightlifting-table th {
+    background-color: var(--green-light);
+    color: #222;
+    font-weight: 500;
+	padding: 16px 20px;
+	margin-top: 30px;
 	margin-bottom: 30px;
 }
 
-.home {
-	color: #DF471C;
-	font-weight: 600;
+.weightlifting-table td:first-child {
+    color: #222;
+    font-weight: 400;
+	padding: 16px 20px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
-.title {
-	display: flex;
-	font-size: 62px;
-	width: 100%;
-	justify-content: center;
-
+.weightlifting-table td:last-child {
+    color: var(--green-accent);
+    font-weight: 300;
 }
 
-.projects-box {
-	margin-top: 50px;
-	display: flex;
-	width: 100%;
-	justify-content: space-between;
-	flex-wrap: wrap;
+.weightlifting-table tr:nth-child(even) {
+    background-color: var(--green-light);
 }
 
-.box {
-	display: inline-block;
-	border: 0px red solid;
-	min-width: 300px;
-	height: 300px;
-	flex: 1;
-	margin: 10px 0px 0px 10px;
-	border-radius: 3px;
+.weightlifting-table tr:nth-child(odd) {
+    background-color: #f8fcf9;
 }
 
-.invisible {
-	background: none;
+/* Source code link style */
+.link {
+    font-size: 13px;
+	margin-top: 30px;
+}
+.link > a {
+    color: #2A5DB0;
+    text-decoration: none;
+    font-weight: 600;
 }
 
-.box-content {
-	line-height: 1.7;
-	margin: 20px;
+.profile-photo {
+   display: block;               /* ensures it’s treated as a block element */
+    margin: 15px auto 50px auto;  /* top/bottom spacing, auto left/right = centered */
+    width: 40%;                    /* adjust size as desired */
+    max-width: 200px;              /* prevents it from being too big */
+    height: auto;                  /* maintains aspect ratio */
+    border-radius: 5px;   
 }
-
-.icon-tray {
-	height: 70px;
-}
-
-.folder {
-	float: left;
-	height: 40px;
-}
-
-.open-link {
-	cursor: pointer;
-	float:right;
-	height: 20px;
-}
-
-.project-title {
-	font-weight: bold;
-	font-size: 20px;
-	margin-bottom: 10px;
-}
-
-.project-description {
-	font-size: 15px;
-	height: 115px;
-}
-
-.skills-tray {
-	font-weight: bold;
-	font-size: 14px;
-}
-
-.baby-blue {
-	background: #b6e1f6;
-	fill: #259DD5;
-	color: #259DD5;
-}
-
-.baby-blue:hover {
-	background: #AEDBF1;
-}
-
-.baby-blue a {
-	fill: #259DD5;
-}
-
-.baby-blue .open-link:hover {
-	fill:black;
-}
-
-/* End Projects */
