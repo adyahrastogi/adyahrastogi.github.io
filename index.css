@@ -46,10 +46,17 @@
     --green-light: #E6F4EA;
 }
 
+h1 {
+    font-size: 1rem; /* Matches the default body font size */
+    font-family: inherit; /* Inherits the font family from the body */
+    font-weight: normal; /* Optional: Makes the font weight normal */
+}
+
 body {
     font-family: "Zalando Sans SemiExpanded", sans-serif;
     font-weight: 500;
 }
+
 
 .container {
     height: 100vh;
